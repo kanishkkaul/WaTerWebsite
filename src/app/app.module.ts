@@ -7,20 +7,26 @@ import { AppComponent } from './app.component';
 import { adminLteConf } from './admin-lte.conf';
 import {LayoutModule} from 'angular-admin-lte';
 import {DropdownModule} from 'angular-admin-lte';
-import {MatSelectModule} from '@angular/material/select';
-import { SystemSelectComponent } from './system-select/system-select.component'
+import { SystemSelectComponent } from './system-select/system-select.component';
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+
+//import from material.module.ts for all Angular Material Components
+import { MaterialModule } from './material.module';
+import { StatusGaugeComponent } from './status-gauge/status-gauge.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SystemSelectComponent
+    SystemSelectComponent,
+    StatusGaugeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     DropdownModule,
-    MatSelectModule,
+    MaterialModule,
+    BrowserAnimationsModule,
     LayoutModule.forRoot(adminLteConf)
   ],
   providers: [],

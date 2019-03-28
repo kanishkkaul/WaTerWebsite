@@ -4,7 +4,7 @@ export var adminLteConf = {
     skin: 'blue',
     isSidebarLeftCollapsed: false,
     sidebarLeftMenu: [
-        {label: 'Start', route: '/', iconClasses: 'fa fa-th'}
+        {label: 'Home', route: '/', iconClasses: 'fa fa-home'},
     ],
     sidebarRightSkin: 'dark'
 };
