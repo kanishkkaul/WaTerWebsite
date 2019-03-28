@@ -15,6 +15,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MaterialModule } from './material.module';
 import { StatusGaugeComponent } from './status-gauge/status-gauge.component';
 
+import { GoogleChartsModule } from 'angular-google-charts';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +29,7 @@ import { StatusGaugeComponent } from './status-gauge/status-gauge.component';
     DropdownModule,
     MaterialModule,
     BrowserAnimationsModule,
+    GoogleChartsModule.forRoot(),
     LayoutModule.forRoot(adminLteConf)
   ],
   providers: [],
