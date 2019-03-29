@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 import { adminLteConf } from './admin-lte.conf';
 import {LayoutModule} from 'angular-admin-lte';
+import { BoxModule } from 'angular-admin-lte';  
 import {DropdownModule} from 'angular-admin-lte';
 import { SystemSelectComponent } from './system-select/system-select.component';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
@@ -26,6 +27,7 @@ import { GoogleChartsModule } from 'angular-google-charts';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BoxModule,
     DropdownModule,
     MaterialModule,
     BrowserAnimationsModule,

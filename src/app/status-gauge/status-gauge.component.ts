@@ -9,13 +9,13 @@ export class StatusGaugeComponent {
   chart = {
     type: 'Gauge',
     data: [
-      ['Salinity Level', 50],
-      ['x level', 72],
-      ['y level', 21]
+      ['Salinity', 50],
+      ['x', 72],
+      ['y ', 21]
     ],
     options: {
-      width: 400,
-      height: 120,
+      width: 600,
+      height: 400,
       greenFrom: 0,
       greenTo: 75,
       redFrom: 90,

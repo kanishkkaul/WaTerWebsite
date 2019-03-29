@@ -4,22 +4,17 @@
     <mk-layout-header [isSidebarLeftToggle]="true" [isSidebarRightToggle]="false" [logoLink]="['/', 'boxs', 'info-box']">
       <mk-layout-header-logo><img class="water-logo" src ="../assets/images/UCLA.png"/>UCLA <b>WaTer</b></mk-layout-header-logo>
       <mk-layout-header-logo-mini><img class="water-logo" src ="../assets/images/UCLA.png"/></mk-layout-header-logo-mini>
+      <mk-dropdown></mk-dropdown>
     </mk-layout-header>
     <mk-layout-content>
-      <app-system-select></app-system-select>
-
-      System Status
-      <br>
-      <br>
-      <!-- Google Charts Gauge Type -->
-      <app-status-gauge>
-      </app-status-gauge>
-
+      <div>
+        <app-system-select></app-system-select>
+      </div>
+          <!-- Google Charts Gauge Type -->  
+      <mk-box header="System Information">
+        <app-status-gauge>
+        </app-status-gauge>
+      </mk-box>
       <router-outlet></router-outlet>
     </mk-layout-content>
-    <mk-layout-footer>
-      <mk-layout-footer-left>
-        Footer right HTML
-      </mk-layout-footer-left>
-    </mk-layout-footer>
   </mk-layout-wrapper>

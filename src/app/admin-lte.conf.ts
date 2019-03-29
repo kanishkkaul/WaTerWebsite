@@ -5,6 +5,9 @@ export var adminLteConf = {
     isSidebarLeftCollapsed: false,
     sidebarLeftMenu: [
         {label: 'Home', route: '/', iconClasses: 'fa fa-home'},
+        {label: 'System Settings', iconClasses: 'fa fa-cogs'},
+        {label: 'User Management',  iconClasses: 'fa fa-users'},
+        {label: 'Reports',iconClasses: 'fa fa-line-chart'}
     ],
     sidebarRightSkin: 'dark'
 };
