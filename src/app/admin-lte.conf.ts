@@ -5,9 +5,9 @@ export var adminLteConf = {
     isSidebarLeftCollapsed: false,
     sidebarLeftMenu: [
         {label: 'Home', route: '/', iconClasses: 'fa fa-home'},
-        {label: 'System Settings', iconClasses: 'fa fa-cogs'},
-        {label: 'User Management',  iconClasses: 'fa fa-users'},
-        {label: 'Reports',iconClasses: 'fa fa-line-chart'}
+        {label: 'System Settings', route: '/settings', iconClasses: 'fa fa-cogs'},
+        {label: 'User Management', route: '/usermgmt', iconClasses: 'fa fa-users'},
+        {label: 'Reports', route: '/reports', iconClasses: 'fa fa-line-chart'}
     ],
     sidebarRightSkin: 'dark'
 };

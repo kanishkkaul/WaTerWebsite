@@ -5,8 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './status-gauge.component.html',
   styleUrls: ['./status-gauge.component.css']
 })
+
 export class StatusGaugeComponent {   
-  chart = {
+  chart: Chart = {
     type: 'Gauge',
     data: [
       ['Salinity', 50],
@@ -19,12 +20,18 @@ export class StatusGaugeComponent {
       greenFrom: 0,
       greenTo: 75,
       redFrom: 90,
-      redTo: 100,
+      redTo: 200,
       yellowFrom: 75,
       yellowTo: 90,
-      minorTicks: 5
+      minorTicks: 5,
+      min: 0,
+      max: 200
     },
-    min: 0,
-    max: 100
   };
+}
+
+export interface Chart{
+  type: string,
+  data: any,
+  options: any;
 }

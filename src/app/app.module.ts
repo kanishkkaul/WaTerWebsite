@@ -17,12 +17,22 @@ import { MaterialModule } from './material.module';
 import { StatusGaugeComponent } from './status-gauge/status-gauge.component';
 
 import { GoogleChartsModule } from 'angular-google-charts';
+import { SettingsComponent } from './settings/settings.component';
+import { HomeComponent } from './home/home.component';
+import { UserManagementComponent } from './user-management/user-management.component';
+import { ReportsComponent } from './reports/reports.component';
+import { SystemGraphComponent } from './system-graph/system-graph.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SystemSelectComponent,
-    StatusGaugeComponent
+    StatusGaugeComponent,
+    SettingsComponent,
+    HomeComponent,
+    UserManagementComponent,
+    ReportsComponent,
+    SystemGraphComponent
   ],
   imports: [
     BrowserModule,

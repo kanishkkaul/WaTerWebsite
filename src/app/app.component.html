@@ -2,19 +2,11 @@
     <mk-layout-sidebar-left>
     </mk-layout-sidebar-left>
     <mk-layout-header [isSidebarLeftToggle]="true" [isSidebarRightToggle]="false" [logoLink]="['/', 'boxs', 'info-box']">
-      <mk-layout-header-logo><img class="water-logo" src ="../assets/images/UCLA.png"/>UCLA <b>WaTer</b></mk-layout-header-logo>
-      <mk-layout-header-logo-mini><img class="water-logo" src ="../assets/images/UCLA.png"/></mk-layout-header-logo-mini>
+      <mk-layout-header-logo><img class="water-logo" src ="./assets/images/UCLA.png"/>UCLA <b>WaTer</b></mk-layout-header-logo>
+      <mk-layout-header-logo-mini><img class="water-logo" src ="./assets/images/UCLA.png"/></mk-layout-header-logo-mini>
       <mk-dropdown></mk-dropdown>
     </mk-layout-header>
     <mk-layout-content>
-      <div>
-        <app-system-select></app-system-select>
-      </div>
-          <!-- Google Charts Gauge Type -->  
-      <mk-box header="System Information">
-        <app-status-gauge>
-        </app-status-gauge>
-      </mk-box>
       <router-outlet></router-outlet>
     </mk-layout-content>
   </mk-layout-wrapper>

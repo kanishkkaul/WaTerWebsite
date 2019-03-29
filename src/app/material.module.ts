@@ -4,8 +4,12 @@ import { NgModule } from '@angular/core';
 
 import {MatSelectModule} from '@angular/material';
 
+import {MatButtonModule} from '@angular/material/button';
+
+import {LocationStrategy, PathLocationStrategy} from  '@angular/common'
+
 @NgModule({
-  imports: [MatSelectModule],
-  exports: [MatSelectModule],
+  imports: [MatSelectModule, MatButtonModule],
+  exports: [MatSelectModule, MatButtonModule],
 })
 export class MaterialModule { }
