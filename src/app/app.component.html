@@ -4,7 +4,16 @@
     <mk-layout-header [isSidebarLeftToggle]="true" [isSidebarRightToggle]="false" [logoLink]="['/', 'boxs', 'info-box']">
       <mk-layout-header-logo><img class="water-logo" src ="./assets/images/UCLA.png"/>UCLA <b>WaTer</b></mk-layout-header-logo>
       <mk-layout-header-logo-mini><img class="water-logo" src ="./assets/images/UCLA.png"/></mk-layout-header-logo-mini>
-      <mk-dropdown></mk-dropdown>
+      <!--<div class = "user-btn">
+          <mk-dropdown toggleText="Basic Toggle" buttonStyleClass="btn btn-outline-info dropdown-toggle">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </mk-dropdown>
+      </div>-->
+      <app-header-right></app-header-right>
     </mk-layout-header>
     <mk-layout-content>
       <router-outlet></router-outlet>

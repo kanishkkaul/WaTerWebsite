@@ -1,0 +1,18 @@
+.system-status{
+    width: 20%;
+    height: 20%;
+    float: left;
+    margin-right: 10%;
+}
+
+.schematic-settings{
+    margin-left: 20%;
+    margin-top:5%;
+    float: left;
+}
+
+.parameter-toggle{
+    float:right;
+    margin-right: 20%;
+    margin-top:5%;
+}
