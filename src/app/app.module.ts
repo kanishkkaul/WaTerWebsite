@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { FormsModule } from '@angular/forms';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -24,9 +26,12 @@ import { UserManagementComponent } from './user-management/user-management.compo
 import { ReportsComponent } from './reports/reports.component';
 import { SystemGraphComponent } from './system-graph/system-graph.component';
 import { HeaderComponent } from './header/header.component';
+import { DlDateTimeDateModule, DlDateTimePickerModule } from 'angular-bootstrap-datetimepicker';
 
 import {NumberPickerModule} from 'ng-number-picker';
 import { HeaderRightComponent } from './header-right/header-right.component';
+import { NgxDaterangepickerMd } from 'ngx-daterangepicker-material';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
@@ -39,17 +44,22 @@ import { HeaderRightComponent } from './header-right/header-right.component';
     ReportsComponent,
     SystemGraphComponent,
     HeaderComponent,
-    HeaderRightComponent
+    HeaderRightComponent,
+    TableComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     BoxModule,
     AlertModule,
     DropdownModule,
     MaterialModule,
     BrowserAnimationsModule,
     NumberPickerModule,
+    DlDateTimeDateModule, 
+    DlDateTimePickerModule,
+    NgxDaterangepickerMd.forRoot(),
     GoogleChartsModule.forRoot(),
     LayoutModule.forRoot(adminLteConf)
   ],

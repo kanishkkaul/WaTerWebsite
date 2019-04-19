@@ -1,3 +1,6 @@
+<div style="display: inline-block">
+  <app-system-select></app-system-select>
+</div>
 <mk-box>
   <div class="status-box">
     <div class="system-status">
@@ -7,7 +10,7 @@
       </mk-alert>
     </div>
 
-    <div class="system-status">
+    <!--<div class="system-status">
       <mk-alert backgroundColor="danger" [isDismissible]="false">
           <h4><i class="icon fa fa-warning"></i>System Status</h4>
           System is down!
@@ -19,7 +22,7 @@
           <h4><i class="icon fa fa-check"></i>System Status</h4>
           System Looks Good!
       </mk-alert>
-    </div>
+    </div>-->
   </div>
 </mk-box>
 
@@ -28,13 +31,18 @@
     <div class="schematic-settings">
       Schematic to be entered here
     </div>
-    <div class="parameter-toggle">
-      Parameter 1 <input type="number" [min]="param1.min" [max]="param1.max" [value]="param1.value">
-      <br>
-      <br>
-      Parameter 2 <input type="number" [min]="param2.min" [max]="param2.max" [value]="param2.value">
-      <br>
-      <br>
-      Paramater 3 <input type="number" [min]="param3.min" [max]="param3.max" [value]="param3.value">
-    </div>
+    <form>
+      <div class="parameter-toggle">
+        Parameter 1 <input type="number" [min]="param1.min" [max]="param1.max" [value]="param1.value">
+        <br>
+        <br>
+        Parameter 2 <input type="number" [min]="param2.min" [max]="param2.max" [value]="param2.value">
+        <br>
+        <br>
+        Paramater 3 <input type="number" [min]="param3.min" [max]="param3.max" [value]="param3.value">
+        <br>
+        <br>
+        <button mat-flat-button color="primary">Apply</button>
+      </div>
+    </form>
 </mk-box>

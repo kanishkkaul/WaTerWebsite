@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import system_data from '../../assets/data/sensor_data.json';
+
 @Component({
   selector: 'app-settings',
   templateUrl: './settings.component.html',
@@ -30,6 +32,11 @@ export class SettingsComponent{
       max: 100
     };
 
+    /*setParams = (system_data) => {
+        for (let data in system_data) {
+          console.log(data);
+        }
+    }*/
 
 }
 

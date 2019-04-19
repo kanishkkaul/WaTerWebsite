@@ -1,3 +1,31 @@
-<p>
-  reports works!
-</p>
+<div style="display: inline-block">
+  <app-system-select></app-system-select>
+</div>
+<mk-box>
+  <form>
+    <div>
+      Select Date Range:
+      <input type="text" name="date-selection" ngxDaterangepickerMd [(ngModel)]="selected" class="form-control"/>
+    </div>
+  </form>
+  <br>
+  <br>
+  <div>
+    <app-table></app-table>
+  </div>
+  <br>
+  <br>
+  <div>
+      Overall System Peformance:
+      <app-system-graph></app-system-graph>
+  </div>
+  <form>
+      Report Comments and Summary:
+      <br>
+      <textarea rows="4" cols="50">
+      </textarea>
+      <br>
+      <button mat-flat-button color="primary">Submit</button>
+  </form>
+</mk-box>
+

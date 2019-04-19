@@ -12,20 +12,22 @@ export class StatusGaugeComponent {
     data: [
       ['Salinity', 50],
       ['x', 72],
-      ['y ', 21]
+      ['y ', 21],
+      ['A', 13],
+      ['B', 56],
+      ['C', 35]
     ],
     options: {
-      width: 600,
-      height: 400,
-      greenFrom: 0,
-      greenTo: 75,
-      redFrom: 90,
+      width: 400,
+      height: 300,
+      redFrom: 190,
       redTo: 200,
-      yellowFrom: 75,
-      yellowTo: 90,
+      yellowFrom: 175,
+      yellowTo: 190,
       minorTicks: 5,
       min: 0,
-      max: 200
+      max: 200,
+      forcelFrame: true
     },
   };
 }

@@ -1,0 +1,24 @@
+{
+    "system1" :[ 
+        {
+            "salinity" :  "231.0",
+            "parameter1": "330.21",
+            "paraemter2": "124.98"
+        }
+    ],
+    "system2" :[ 
+        {
+            "salinity" :  "237.0",
+            "parameter1": "530.21",
+            "paraemter2": "135.98"
+        }
+    ],
+    "system3" :[ 
+        {
+            "salinity" :  "91.0",
+            "parameter1": "654.21",
+            "paraemter2": "871.98"
+        }
+    ]
+
+}
