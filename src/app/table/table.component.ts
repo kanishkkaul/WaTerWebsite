@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-
+import { SystemDataService} from '../system-data.service';
 
 const DATATABLE : System[] = [
   {name: "Pressure", min: 10, max: 200, avg:35.23},
@@ -21,6 +21,8 @@ const DATATABLE : System[] = [
 })
 
 export class TableComponent {
+
+  constructor(private systemDataService: SystemDataService){}
 
   dataSource = DATATABLE;
 

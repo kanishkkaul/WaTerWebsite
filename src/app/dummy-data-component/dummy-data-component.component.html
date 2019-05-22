@@ -1,0 +1,22 @@
+<table mat-table [dataSource] = "systemData" class="mat-elevation-z8">
+  <ng-container matColumnDef="time">
+      <th mat-header-cell *matHeaderCellDef>Time Stamp</th>
+      <td mat-cell *matCellDef="let element"> {{element.time}} </td>
+  </ng-container>
+  <ng-container matColumnDef="value">
+      <th mat-header-cell *matHeaderCellDef>Value</th>
+      <td mat-cell *matCellDef="let element"> {{element.value}} {{element.units}} </td>
+  </ng-container>
+  <ng-container matColumnDef="tag">
+      <th mat-header-cell *matHeaderCellDef>Subsystem</th>
+      <td mat-cell *matCellDef="let element"> {{element.tag}} </td>
+  </ng-container>
+  <ng-container matColumnDef="system_ID">
+      <th mat-header-cell *matHeaderCellDef>System ID</th>
+      <td mat-cell *matCellDef="let element"> {{element.system_ID}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+

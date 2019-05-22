@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { FormsModule } from '@angular/forms';
 
@@ -33,6 +34,9 @@ import { HeaderRightComponent } from './header-right/header-right.component';
 import { NgxDaterangepickerMd } from 'ngx-daterangepicker-material';
 import { TableComponent } from './table/table.component';
 
+import { SystemDataService } from './system-data.service';
+import { DummyDataComponentComponent } from './dummy-data-component/dummy-data-component.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,9 +50,11 @@ import { TableComponent } from './table/table.component';
     HeaderComponent,
     HeaderRightComponent,
     TableComponent,
+    DummyDataComponentComponent,
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     FormsModule,
     BoxModule,
@@ -63,7 +69,9 @@ import { TableComponent } from './table/table.component';
     GoogleChartsModule.forRoot(),
     LayoutModule.forRoot(adminLteConf)
   ],
-  providers: [],
+  providers: [
+    SystemDataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
